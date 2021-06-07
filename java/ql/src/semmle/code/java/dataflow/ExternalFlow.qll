@@ -91,6 +91,7 @@ private predicate sourceModelCsv(string row) {
   row =
     [
       // org.springframework.security.web.savedrequest.SavedRequest
+      "org.springframework.security.web.savedrequest;SavedRequest;true;getRedirectUrlXXXX;;;ReturnValue;remote",
       "org.springframework.security.web.savedrequest;SavedRequest;true;getRedirectUrl;;;ReturnValue;remote",
       "org.springframework.security.web.savedrequest;SavedRequest;true;getCookies;;;ReturnValue;remote",
       "org.springframework.security.web.savedrequest;SavedRequest;true;getHeaderValues;;;ReturnValue;remote",
