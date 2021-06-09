@@ -10,9 +10,9 @@ on:
       # input data files
       - '*/documentation/library-coverage/cwe-sink.csv'
       - '*/documentation/library-coverage/frameworks.csv'
-      # coverage report files
-      - '*/documentation/library-coverage/flow-model-coverage.csv'
-      - '*/documentation/library-coverage/flow-model-coverage.rst'
+    branches:
+      - main
+      - 'rc/*'
 
 jobs:
   build:
