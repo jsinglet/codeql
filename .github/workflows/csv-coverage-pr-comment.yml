@@ -1,15 +1,12 @@
 name: Check CSV flow coverage changes
 
 on:
-  pull_request:
+  pull_request_target:
     paths:
-      - '.github/workflows/csv-coverage-pr-comment.yml'
       - '*/ql/src/**/*.ql'
       - '*/ql/src/**/*.qll'
-      - 'misc/scripts/library-coverage/*.py'
       # input data files
-      - '*/documentation/library-coverage/cwe-sink.csv'
-      - '*/documentation/library-coverage/frameworks.csv'
+      - '*/documentation/library-coverage/*.csv'
     branches:
       - main
       - 'rc/*'
@@ -27,11 +24,11 @@ jobs:
     - name: Clone self (github/codeql) head
       uses: actions/checkout@v2
       with:
+        ref: ${{ github.event.pull_request.head.sha }}
         path: head
     - name: Clone self (github/codeql) base
       uses: actions/checkout@v2
       with:
-        ref: ${{ github.event.pull_request.base.sha }}
         path: base
     - name: Set up Python 3.8
       uses: actions/setup-python@v2
@@ -49,7 +46,7 @@ jobs:
     - name: Generate CSV files on head and base of the PR
       run: |
         echo "Running generator on ${{github.sha}}"
-        PATH="$PATH:codeql-cli/codeql" python head/misc/scripts/library-coverage/generate-report.py ci head head
+        PATH="$PATH:codeql-cli/codeql" python base/misc/scripts/library-coverage/generate-report.py ci head head
         mkdir out_head
         cp flow-model-coverage-*.csv out_head/
         cp flow-model-coverage-*.rst out_head/
@@ -75,7 +72,7 @@ jobs:
           out_base/flow-model-coverage-*.rst
     - name: Check coverage files
       run: |
-        GITHUB_TOKEN=${{ secrets.GITHUB_TOKEN }} python head/misc/scripts/library-coverage/compare-files.py out_head out_base comparison.md ${{github.event.pull_request.number}} ${{github.run_id}}
+        GITHUB_TOKEN=${{ secrets.GITHUB_TOKEN }} python base/misc/scripts/library-coverage/compare-files.py out_head out_base comparison.md ${{github.event.pull_request.number}} ${{github.run_id}}
     - name: Upload comparison results
       uses: actions/upload-artifact@v2
       with:
