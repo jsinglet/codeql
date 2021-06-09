@@ -3,7 +3,7 @@
  * @description Accessing paths influenced by users can allow an attacker to access unexpected resources.
  * @kind path-problem
  * @problem.severity error
- * @security-severity 5.5
+ * @security-severity 5.9
  * @sub-severity high
  * @precision high
  * @id py/path-injection

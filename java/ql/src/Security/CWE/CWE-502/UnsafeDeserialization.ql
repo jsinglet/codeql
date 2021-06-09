@@ -4,7 +4,7 @@
  *              execute arbitrary code.
  * @kind path-problem
  * @problem.severity error
- * @security-severity 5.8
+ * @security-severity 5.9
  * @precision high
  * @id java/unsafe-deserialization
  * @tags security

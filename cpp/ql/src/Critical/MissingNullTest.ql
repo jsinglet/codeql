@@ -4,7 +4,7 @@
  * @kind problem
  * @id cpp/missing-null-test
  * @problem.severity recommendation
- * @security-severity 5.5
+ * @security-severity 4.0
  * @tags reliability
  *       security
  *       external/cwe/cwe-476

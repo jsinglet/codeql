@@ -4,7 +4,7 @@
  *              user to perform a cross-site scripting attack.
  * @kind path-problem
  * @problem.severity error
- * @security-severity 5.5
+ * @security-severity 2.9
  * @precision high
  * @id js/html-constructed-from-input
  * @tags security

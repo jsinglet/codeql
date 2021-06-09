@@ -3,7 +3,7 @@
  * @description Non-HTTPS connections can be intercepted by third parties.
  * @kind path-problem
  * @problem.severity recommendation
- * @security-severity 5.2
+ * @security-severity 5.9
  * @precision medium
  * @id java/non-https-url
  * @tags security

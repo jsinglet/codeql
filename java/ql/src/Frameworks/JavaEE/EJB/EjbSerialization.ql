@@ -4,7 +4,7 @@
  *              the Java serialization protocol, since their use could compromise security.
  * @kind problem
  * @problem.severity error
- * @security-severity 1.4
+ * @security-severity 5.9
  * @precision low
  * @id java/ejb/substitution-in-serialization
  * @tags external/cwe/cwe-573

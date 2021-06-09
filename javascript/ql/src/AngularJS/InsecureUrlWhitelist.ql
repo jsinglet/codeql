@@ -3,7 +3,7 @@
  * @description URL whitelists that are too permissive can cause security vulnerabilities.
  * @kind problem
  * @problem.severity warning
- * @security-severity 5.9
+ * @security-severity 6.0
  * @precision very-high
  * @id js/angular/insecure-url-whitelist
  * @tags security

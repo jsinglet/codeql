@@ -5,7 +5,7 @@
  *              developing a subsequent exploit.
  * @kind path-problem
  * @problem.severity error
- * @security-severity 5.3
+ * @security-severity 3.6
  * @precision high
  * @id py/stack-trace-exposure
  * @tags security

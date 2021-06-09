@@ -3,7 +3,7 @@
  * @description Security checks on the substrings of an unparsed URL are often vulnerable to bypassing.
  * @kind problem
  * @problem.severity warning
- * @security-severity 5.5
+ * @security-severity 6.4
  * @precision high
  * @id py/incomplete-url-substring-sanitization
  * @tags correctness

@@ -4,7 +4,7 @@
  * @kind problem
  * @id cpp/file-never-closed
  * @problem.severity warning
- * @security-severity 5.9
+ * @security-severity 3.6
  * @tags efficiency
  *       security
  *       external/cwe/cwe-775

@@ -3,6 +3,7 @@
  * @description Storing sensitive information in cleartext can expose it to an attacker.
  * @kind problem
  * @problem.severity warning
+ * @security-severity 5.9
  * @precision medium
  * @id java/cleartext-storage-in-properties
  * @tags security

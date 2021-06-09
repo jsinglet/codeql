@@ -5,7 +5,7 @@
  * @kind problem
  * @id cs/xml-injection
  * @problem.severity error
- * @security-severity 5.3
+ * @security-severity 5.9
  * @precision high
  * @tags security
  *       external/cwe/cwe-091

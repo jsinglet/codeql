@@ -4,7 +4,7 @@
  *              opens up for potential man-in-the-middle attacks.
  * @kind path-problem
  * @problem.severity error
- * @security-severity 5.2
+ * @security-severity 5.9
  * @precision high
  * @id js/insecure-download
  * @tags security

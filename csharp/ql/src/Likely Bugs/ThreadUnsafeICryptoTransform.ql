@@ -5,7 +5,7 @@
  *              but under some circumstances may also result in incorrect results.
  * @kind problem
  * @problem.severity warning
- * @security-severity 5.2
+ * @security-severity 6.4
  * @precision medium
  * @id cs/thread-unsafe-icryptotransform-field-in-class
  * @tags concurrency

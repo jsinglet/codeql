@@ -5,7 +5,7 @@
  *              to command injection.
  * @kind problem
  * @problem.severity error
- * @security-severity 5.2
+ * @security-severity 5.9
  * @precision low
  * @id cpp/command-line-injection
  * @tags security

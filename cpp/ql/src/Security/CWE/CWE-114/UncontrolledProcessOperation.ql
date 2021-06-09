@@ -5,6 +5,7 @@
  *              commands.
  * @kind path-problem
  * @problem.severity warning
+ * @security-severity 5.9
  * @precision medium
  * @id cpp/uncontrolled-process-operation
  * @tags security

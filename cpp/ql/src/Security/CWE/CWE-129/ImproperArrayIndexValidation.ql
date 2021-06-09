@@ -6,7 +6,7 @@
  * @kind problem
  * @id cpp/unclear-array-index-validation
  * @problem.severity warning
- * @security-severity 5.5
+ * @security-severity 5.9
  * @tags security
  *       external/cwe/cwe-129
  */

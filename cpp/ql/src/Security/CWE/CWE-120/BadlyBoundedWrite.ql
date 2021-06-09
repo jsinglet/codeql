@@ -5,7 +5,7 @@
  *              overflow.
  * @kind problem
  * @problem.severity error
- * @security-severity 5.5
+ * @security-severity 6.4
  * @precision high
  * @id cpp/badly-bounded-write
  * @tags reliability

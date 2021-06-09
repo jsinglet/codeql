@@ -5,7 +5,7 @@
  *              take extreme values.
  * @kind problem
  * @problem.severity error
- * @security-severity 5.5
+ * @security-severity 6.4
  * @precision medium
  * @id cpp/overrunning-write-with-float
  * @tags reliability

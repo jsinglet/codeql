@@ -3,6 +3,7 @@
  * @description Storing sensitive information in cleartext can expose it to an attacker.
  * @kind problem
  * @problem.severity error
+ * @security-severity 5.9
  * @precision high
  * @id java/cleartext-storage-in-cookie
  * @tags security

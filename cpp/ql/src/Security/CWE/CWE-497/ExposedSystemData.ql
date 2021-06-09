@@ -5,7 +5,7 @@
  *              attack plan.
  * @kind problem
  * @problem.severity warning
- * @security-severity 5.3
+ * @security-severity 3.6
  * @precision medium
  * @id cpp/system-data-exposure
  * @tags security

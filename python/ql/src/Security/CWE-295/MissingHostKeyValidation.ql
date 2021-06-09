@@ -3,7 +3,7 @@
  * @description Accepting unknown host keys can allow man-in-the-middle attacks.
  * @kind problem
  * @problem.severity error
- * @security-severity 5.3
+ * @security-severity 5.9
  * @precision high
  * @id py/paramiko-missing-host-key-validation
  * @tags security

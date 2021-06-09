@@ -5,7 +5,7 @@
  *              an HTTP header.
  * @kind problem
  * @problem.severity error
- * @security-severity 4.0
+ * @security-severity 5.9
  * @precision high
  * @id java/netty-http-response-splitting
  * @tags security

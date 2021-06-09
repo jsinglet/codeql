@@ -3,7 +3,7 @@
  * @description Matching a URL or hostname against a regular expression that contains an unescaped dot as part of the hostname might match more hostnames than expected.
  * @kind problem
  * @problem.severity warning
- * @security-severity 5.5
+ * @security-severity 6.4
  * @precision high
  * @id py/incomplete-hostname-regexp
  * @tags correctness

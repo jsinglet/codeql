@@ -4,7 +4,7 @@
  *              schema.
  * @kind path-problem
  * @problem.severity recommendation
- * @security-severity 5.5
+ * @security-severity 5.9
  * @precision high
  * @id cs/xml/missing-validation
  * @tags security

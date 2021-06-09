@@ -4,7 +4,7 @@
  *              if the state may be changed between the check and use.
  * @kind problem
  * @problem.severity warning
- * @security-severity 5.2
+ * @security-severity 6.9
  * @precision medium
  * @id java/toctou-race-condition
  * @tags security

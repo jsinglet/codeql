@@ -6,7 +6,7 @@
  * @kind path-problem
  * @id cpp/unsafe-use-of-this
  * @problem.severity error
- * @security-severity 5.9
+ * @security-severity 3.6
  * @precision very-high
  * @tags correctness
  *       language-features

@@ -4,7 +4,7 @@
  *              attacker to access unexpected resources.
  * @kind path-problem
  * @problem.severity warning
- * @security-severity 5.5
+ * @security-severity 5.9
  * @precision medium
  * @id cpp/path-injection
  * @tags security

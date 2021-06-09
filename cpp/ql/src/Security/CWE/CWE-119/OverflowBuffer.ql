@@ -6,7 +6,7 @@
  * @kind problem
  * @id cpp/overflow-buffer
  * @problem.severity recommendation
- * @security-severity 5.5
+ * @security-severity 6.4
  * @tags security
  *       external/cwe/cwe-119
  *       external/cwe/cwe-121
