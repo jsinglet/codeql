@@ -49,7 +49,8 @@ def comment_pr(folder1, folder2, output_file, pr_number, run_id):
         return
 
     comment = ":warning: The head of this PR and the base branch were compared for differences in the CSV coverage reports. " + \
-        "The generated reports are available in the [artifacts of this workflow run](https://github.com/github/codeql/actions/runs/" + run_id + "). "
+        "The generated reports are available in the [artifacts of this workflow run](https://github.com/github/codeql/actions/runs/" + run_id + "). " + \
+        "The differences will be picked up by the nightly job after the PR gets merged. "
 
     if size < 2000:
         print("There's a small change in the CSV coverage reports")
@@ -111,12 +112,14 @@ def compare_folders(folder1, folder2, output_file):
 
         if cmp1 != "" or cmp2 != "":
             print("Generated file contents are not matching", file=sys.stderr)
-            return_md += "\n### " + lang + "\n\n#### Generated files are not matching for " + \
+            return_md += "\n### " + lang + "\n\n#### Generated file changes for " + \
                 lang + "\n\n"
             if cmp1 != "":
-                return_md += "- Mismatch in " + generated_output_rst + ":\n```\n" + cmp1 + "```\n\n"
+                return_md += "- Changes to " + generated_output_rst + \
+                    ":\n```diff\n" + cmp1 + "```\n\n"
             if cmp2 != "":
-                return_md += "- Mismatch in " + generated_output_csv + ":\n```\n" + cmp2 + "```\n\n"
+                return_md += "- Changes to " + generated_output_csv + \
+                    ":\n```diff\n" + cmp2 + "```\n\n"
 
     with open(output_file, 'w', newline='') as out:
         out.write(return_md)
